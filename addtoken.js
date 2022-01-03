@@ -3,10 +3,10 @@ if (typeof window.ethereum !== 'undefined')
 console.log('MetaMask is installed')
 }
 
-const tokenAddress = '0xef50c139be0b67baab4f834d3d9a1f09d2691e02';
-const tokenSymbol = 'SGC';
-const tokenDecimals = 18;
-const tokenImage = 'https://i.imgur.com/o2EXAlM.png';
+const tokenAddress = '0xef50c139be0b67baab4f834d3d9a1f09d2691e02'; // replace with your own crypto address
+const tokenSymbol = 'SGC'; // replace with your own crypto symbol
+const tokenDecimals = 18; // put number of deciimals
+const tokenImage = 'https://i.imgur.com/o2EXAlM.png'; // add link to a token image
 
 async function addTokenFunction() {
 
@@ -26,9 +26,9 @@ try {
   });
 
   if (wasAdded) {
-    console.log('Thanks for your interest!');
+    console.log('Currency Added Successfuly');
   } else {
-    console.log('HelloWorld Coin has not been added');
+    console.log('The currency has not been added');
   }
 } catch (error) {
   console.log(error);
